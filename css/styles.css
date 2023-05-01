@@ -476,6 +476,8 @@ img {
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 .footer-logo {
   margin-right: 76px;
@@ -844,6 +846,10 @@ input[type="checkbox"]:checked + .checkbox-icon > .icon-checkbox-checked {
   outline-offset: -2px;
   color: var(--color-white);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-email::placeholder {
+  color: var(--color-white);
+  opacity: 1;
 }
 .subscribe-btn {
   display: flex;
