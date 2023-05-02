@@ -720,13 +720,13 @@ img {
   outline: 1px solid transparent;
   outline-offset: -1px;
   background-color: transparent;
-  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input:hover,
 .modal-form-input:focus {
   border: 1px solid #4d5ae5;
-  border-radius: 4px;
 }
+
 .modal-form-icon {
   position: absolute;
 
@@ -783,6 +783,7 @@ img {
   letter-spacing: 0.04em;
   color: var(--color-text-form);
 }
+
 .checkbox-icon {
 }
 
@@ -790,14 +791,20 @@ img {
   border: 2px solid var(--color-iris);
   border-radius: 4px;
 }
+
+.checkbox-input:focus + .checkbox-icon {
+  border: 1px solid #4d5ae5;
+  border-radius: 4px;
+}
+
 .icon-checkbox-unchecked {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type="checkbox"]:checked + .checkbox-icon > .icon-checkbox-unchecked {
+/* input[type="checkbox"]:checked + .checkbox-icon > .icon-checkbox-unchecked {
   opacity: 0;
-}
+} */
 .icon-checkbox-checked {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -807,13 +814,6 @@ input[type="checkbox"]:checked + .checkbox-icon > .icon-checkbox-checked {
 }
 .modal-form-checkbox-link {
   color: var(--color-iris);
-}
-
-.person {
-}
-.phone {
-}
-.mail {
 }
 
 /* Subscribe */
@@ -874,7 +874,4 @@ input[type="checkbox"]:checked + .checkbox-icon > .icon-checkbox-checked {
 .subscribe-btn:hover,
 .subscribe-btn:focus {
   background-color: var(--color-ocean);
-}
-
-.form-portfolio {
 }
