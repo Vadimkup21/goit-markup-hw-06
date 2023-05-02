@@ -785,10 +785,10 @@ img {
 }
 .checkbox-icon {
 }
-.checkbox-icon:hover,
+
 .checkbox-icon:focus {
-  border: 1px solid var(--color-iris);
-  border-radius: 1px;
+  border: 2px solid var(--color-iris);
+  border-radius: 4px;
 }
 .icon-checkbox-unchecked {
   opacity: 1;
@@ -830,6 +830,7 @@ input[type="checkbox"]:checked + .checkbox-icon > .icon-checkbox-checked {
   margin-bottom: 16px;
 }
 .subscribe-form {
+  align-items: center;
   display: flex;
   gap: 24px;
 }
@@ -858,6 +859,7 @@ input[type="checkbox"]:checked + .checkbox-icon > .icon-checkbox-checked {
   align-items: center;
   padding: 8px 24px;
   gap: 16px;
+  border: 1px solid transparent;
   border-radius: 4px;
   background-color: var(--color-iris);
   font-family: "Roboto";
